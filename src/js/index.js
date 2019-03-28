@@ -18,7 +18,7 @@ function getInputAndDisplayData(){
 }
 
 function fetchOnThisDay(input){
-    fetch(`http://numbersapi.com/${input}/date?json`, {headers:{'content-type': 'application/json'}})
+    fetch(`http://numbersapi.com/${input}/date?json`)
           .then((res) => res.json())
           .then((data) => {
                 onThisDay(data);
@@ -41,7 +41,7 @@ function fecthTrivia(input){
       dd = dd.replace(/^0+/g, '');
     }
   
-  fetch(`http://numbersapi.com/${mm}?json`, {headers:{'content-type': 'application/json'}})
+  fetch(`http://numbersapi.com/${mm}?json`)
           .then((res) => res.json())
           .then((data) => {
                 monthTrivia(data);
@@ -49,7 +49,7 @@ function fecthTrivia(input){
           .catch((err) => {
             console.log('Fetch Error : ', err);
           });
-  fetch(`http://numbersapi.com/${dd}?json`, {headers:{'content-type': 'application/json'}})
+  fetch(`http://numbersapi.com/${dd}?json`)
           .then((res) => res.json())
           .then((data) => {
                 dayTrivia(data);
