@@ -1,7 +1,7 @@
 function getInputAndDisplayData(){
     const button = document.getElementsByTagName('button')[0];
     button.addEventListener('click', () => {
-        const input = document.getElementsByName('birthday')[0].value;
+        let input = document.getElementsByName('birthday')[0].value;
         const regex = /^(0[1-9]|1[0-2])\/(0[1-9]|1[0-9]|2[0-9]|3[0-1])$/
         if(regex.test(input)){
             const p = document.getElementsByClassName('card-text')[0];
