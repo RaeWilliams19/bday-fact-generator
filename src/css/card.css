@@ -1,0 +1,19 @@
+.card-body {
+    text-align: center;
+    box-shadow: 3px 3px 6px black;
+}
+
+.card {
+    margin-bottom: 20px;
+    width: 20rem;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.fact {
+    overflow: scroll;
+    max-height: 270px;
+    box-shadow: 3px 3px 6px black;
+}

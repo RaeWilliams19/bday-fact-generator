@@ -10,7 +10,7 @@ User inputs their birthday in the format mm/dd and an API call is made to http:/
 ```
 npm install
 npm run build
-npm start
+open a second terminal and run npm start
 
 ```
 # This app was built using

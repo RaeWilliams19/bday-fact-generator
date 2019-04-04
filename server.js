@@ -8,19 +8,22 @@ const port = 3000;
 
 const corsOptions = {
   "origin": "*",
-  "methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
+  "methods": "GET",
   "preflightContinue": false,
   "optionsSuccessStatus": 204
 }
 
-app.engine('hbs', exphbs({defaultLayout: 'main', extname: '.hbs'}));
+app.engine('hbs', exphbs({
+  defaultLayout: 'main',
+  extname: '.hbs'
+}));
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 
 app.use(express.static(path.join(__dirname, 'dist')));
 
 app.get('/', cors(corsOptions), (req, res) => {
-    res.render('home');
+  res.render('home');
 });
 
 const server = http.createServer(app);
