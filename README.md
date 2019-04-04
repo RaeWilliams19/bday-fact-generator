@@ -1,5 +1,5 @@
 # Birthday Fact Generator
-A small one day project, which was created on and inspired by my birthday (March 14th).
+A one day project, which was created on and inspired by my birthday (March 14th).
 
 User inputs their birthday in the format mm/dd and an API call is made to http://numbersapi.com which generate facts for: 
 * The date - what happened in history.
@@ -16,5 +16,5 @@ open a second terminal and run npm start
 # This app was built using
 * Express
 * Handlebars
-* (A little bit of BootStrap)
+* (Some BootStrap)
 * Webpack
